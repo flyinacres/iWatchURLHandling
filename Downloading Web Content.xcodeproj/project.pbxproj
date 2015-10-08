@@ -13,6 +13,13 @@
 		A53E50E51BC73198008F3B05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53E50E41BC73198008F3B05 /* Images.xcassets */; };
 		A53E50E81BC73198008F3B05 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A53E50E61BC73198008F3B05 /* LaunchScreen.xib */; };
 		A53E50F41BC73198008F3B05 /* Downloading_Web_ContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E50F31BC73198008F3B05 /* Downloading_Web_ContentTests.swift */; };
+		A53E51071BC731A0008F3B05 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E51061BC731A0008F3B05 /* InterfaceController.swift */; };
+		A53E51091BC731A0008F3B05 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E51081BC731A0008F3B05 /* NotificationController.swift */; };
+		A53E510B1BC731A0008F3B05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53E510A1BC731A0008F3B05 /* Images.xcassets */; };
+		A53E510F1BC731A0008F3B05 /* Downloading Web Content WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A53E510E1BC731A0008F3B05 /* Downloading Web Content WatchKit App.app */; };
+		A53E51171BC731A0008F3B05 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53E51151BC731A0008F3B05 /* Interface.storyboard */; };
+		A53E51191BC731A0008F3B05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53E51181BC731A0008F3B05 /* Images.xcassets */; };
+		A53E511C1BC731A0008F3B05 /* Downloading Web Content WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A53E51011BC731A0008F3B05 /* Downloading Web Content WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,35 @@
 			remoteGlobalIDString = A53E50D71BC73198008F3B05;
 			remoteInfo = "Downloading Web Content";
 		};
+		A53E51101BC731A0008F3B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A53E50D01BC73198008F3B05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A53E510D1BC731A0008F3B05;
+			remoteInfo = "Downloading Web Content WatchKit App";
+		};
+		A53E511A1BC731A0008F3B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A53E50D01BC73198008F3B05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A53E51001BC731A0008F3B05;
+			remoteInfo = "Downloading Web Content WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A53E51231BC731A0008F3B05 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A53E511C1BC731A0008F3B05 /* Downloading Web Content WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A53E50D81BC73198008F3B05 /* Downloading Web Content.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Downloading Web Content.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +71,16 @@
 		A53E50ED1BC73198008F3B05 /* Downloading Web ContentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Downloading Web ContentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53E50F21BC73198008F3B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A53E50F31BC73198008F3B05 /* Downloading_Web_ContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloading_Web_ContentTests.swift; sourceTree = "<group>"; };
+		A53E51011BC731A0008F3B05 /* Downloading Web Content WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Downloading Web Content WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53E51041BC731A0008F3B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A53E51051BC731A0008F3B05 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A53E51061BC731A0008F3B05 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A53E51081BC731A0008F3B05 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A53E510A1BC731A0008F3B05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A53E510E1BC731A0008F3B05 /* Downloading Web Content WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Downloading Web Content WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53E51141BC731A0008F3B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A53E51161BC731A0008F3B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A53E51181BC731A0008F3B05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A53E50FE1BC731A0008F3B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +113,8 @@
 			children = (
 				A53E50DA1BC73198008F3B05 /* Downloading Web Content */,
 				A53E50F01BC73198008F3B05 /* Downloading Web ContentTests */,
+				A53E51021BC731A0008F3B05 /* Downloading Web Content WatchKit Extension */,
+				A53E51121BC731A0008F3B05 /* Downloading Web Content WatchKit App */,
 				A53E50D91BC73198008F3B05 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +124,8 @@
 			children = (
 				A53E50D81BC73198008F3B05 /* Downloading Web Content.app */,
 				A53E50ED1BC73198008F3B05 /* Downloading Web ContentTests.xctest */,
+				A53E51011BC731A0008F3B05 /* Downloading Web Content WatchKit Extension.appex */,
+				A53E510E1BC731A0008F3B05 /* Downloading Web Content WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +168,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A53E51021BC731A0008F3B05 /* Downloading Web Content WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A53E51061BC731A0008F3B05 /* InterfaceController.swift */,
+				A53E51081BC731A0008F3B05 /* NotificationController.swift */,
+				A53E510A1BC731A0008F3B05 /* Images.xcassets */,
+				A53E51031BC731A0008F3B05 /* Supporting Files */,
+			);
+			path = "Downloading Web Content WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A53E51031BC731A0008F3B05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A53E51041BC731A0008F3B05 /* Info.plist */,
+				A53E51051BC731A0008F3B05 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A53E51121BC731A0008F3B05 /* Downloading Web Content WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A53E51151BC731A0008F3B05 /* Interface.storyboard */,
+				A53E51181BC731A0008F3B05 /* Images.xcassets */,
+				A53E51131BC731A0008F3B05 /* Supporting Files */,
+			);
+			path = "Downloading Web Content WatchKit App";
+			sourceTree = "<group>";
+		};
+		A53E51131BC731A0008F3B05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A53E51141BC731A0008F3B05 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +216,12 @@
 				A53E50D41BC73198008F3B05 /* Sources */,
 				A53E50D51BC73198008F3B05 /* Frameworks */,
 				A53E50D61BC73198008F3B05 /* Resources */,
+				A53E51231BC731A0008F3B05 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A53E511B1BC731A0008F3B05 /* PBXTargetDependency */,
 			);
 			name = "Downloading Web Content";
 			productName = "Downloading Web Content";
@@ -150,6 +246,39 @@
 			productReference = A53E50ED1BC73198008F3B05 /* Downloading Web ContentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A53E51001BC731A0008F3B05 /* Downloading Web Content WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A53E51201BC731A0008F3B05 /* Build configuration list for PBXNativeTarget "Downloading Web Content WatchKit Extension" */;
+			buildPhases = (
+				A53E50FD1BC731A0008F3B05 /* Sources */,
+				A53E50FE1BC731A0008F3B05 /* Frameworks */,
+				A53E50FF1BC731A0008F3B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A53E51111BC731A0008F3B05 /* PBXTargetDependency */,
+			);
+			name = "Downloading Web Content WatchKit Extension";
+			productName = "Downloading Web Content WatchKit Extension";
+			productReference = A53E51011BC731A0008F3B05 /* Downloading Web Content WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A53E510D1BC731A0008F3B05 /* Downloading Web Content WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A53E511D1BC731A0008F3B05 /* Build configuration list for PBXNativeTarget "Downloading Web Content WatchKit App" */;
+			buildPhases = (
+				A53E510C1BC731A0008F3B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Downloading Web Content WatchKit App";
+			productName = "Downloading Web Content WatchKit App";
+			productReference = A53E510E1BC731A0008F3B05 /* Downloading Web Content WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +294,12 @@
 					A53E50EC1BC73198008F3B05 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = A53E50D71BC73198008F3B05;
+					};
+					A53E51001BC731A0008F3B05 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A53E510D1BC731A0008F3B05 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +318,8 @@
 			targets = (
 				A53E50D71BC73198008F3B05 /* Downloading Web Content */,
 				A53E50EC1BC73198008F3B05 /* Downloading Web ContentTests */,
+				A53E51001BC731A0008F3B05 /* Downloading Web Content WatchKit Extension */,
+				A53E510D1BC731A0008F3B05 /* Downloading Web Content WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +339,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A53E50FF1BC731A0008F3B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53E510F1BC731A0008F3B05 /* Downloading Web Content WatchKit App.app in Resources */,
+				A53E510B1BC731A0008F3B05 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A53E510C1BC731A0008F3B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53E51171BC731A0008F3B05 /* Interface.storyboard in Resources */,
+				A53E51191BC731A0008F3B05 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A53E50FD1BC731A0008F3B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53E51091BC731A0008F3B05 /* NotificationController.swift in Sources */,
+				A53E51071BC731A0008F3B05 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +396,16 @@
 			isa = PBXTargetDependency;
 			target = A53E50D71BC73198008F3B05 /* Downloading Web Content */;
 			targetProxy = A53E50EE1BC73198008F3B05 /* PBXContainerItemProxy */;
+		};
+		A53E51111BC731A0008F3B05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A53E510D1BC731A0008F3B05 /* Downloading Web Content WatchKit App */;
+			targetProxy = A53E51101BC731A0008F3B05 /* PBXContainerItemProxy */;
+		};
+		A53E511B1BC731A0008F3B05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A53E51001BC731A0008F3B05 /* Downloading Web Content WatchKit Extension */;
+			targetProxy = A53E511A1BC731A0008F3B05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +424,14 @@
 				A53E50E71BC73198008F3B05 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A53E51151BC731A0008F3B05 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A53E51161BC731A0008F3B05 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -390,6 +572,62 @@
 			};
 			name = Release;
 		};
+		A53E511E1BC731A0008F3B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Downloading_Web_Content_WatchKit_Extension;
+				INFOPLIST_FILE = "Downloading Web Content WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A53E511F1BC731A0008F3B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Downloading_Web_Content_WatchKit_Extension;
+				INFOPLIST_FILE = "Downloading Web Content WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A53E51211BC731A0008F3B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Downloading Web Content WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A53E51221BC731A0008F3B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Downloading Web Content WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +653,22 @@
 			buildConfigurations = (
 				A53E50FB1BC73198008F3B05 /* Debug */,
 				A53E50FC1BC73198008F3B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A53E511D1BC731A0008F3B05 /* Build configuration list for PBXNativeTarget "Downloading Web Content WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A53E511E1BC731A0008F3B05 /* Debug */,
+				A53E511F1BC731A0008F3B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A53E51201BC731A0008F3B05 /* Build configuration list for PBXNativeTarget "Downloading Web Content WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A53E51211BC731A0008F3B05 /* Debug */,
+				A53E51221BC731A0008F3B05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
