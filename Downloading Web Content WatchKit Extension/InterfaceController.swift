@@ -12,14 +12,17 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var theLabel: WKInterfaceLabel!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        let url = NSURL(string: "http://www.stackoverflow.com")
+        let url = NSURL(string: "http://www.applewatchdevelopercourse.com/message.html")
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
             if error == nil {
                 var urlContent = NSString(data: data, encoding: NSUTF8StringEncoding)
                 println(urlContent)
+                self.theLabel.setText(urlContent as? String)
             } else {
                 println(error)
             }
