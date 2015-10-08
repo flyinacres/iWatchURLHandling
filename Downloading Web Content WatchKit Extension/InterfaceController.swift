@@ -13,6 +13,7 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var theLabel: WKInterfaceLabel!
+    @IBOutlet weak var theImage: WKInterfaceImage!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -26,10 +27,27 @@ class InterfaceController: WKInterfaceController {
             } else {
                 println(error)
             }
+            
         })
         
         task.resume()
+        
+        let url2 = NSURL(string: "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Homer_Simpson_2006.png/212px-Homer_Simpson_2006.png")
+        
+        let task2 = NSURLSession.sharedSession().dataTaskWithURL(url2!, completionHandler: { (data, response, error) -> Void in
+            if error == nil {
+                var homerImage = UIImage(data: data)
+                self.theImage.setImage(homerImage!)
+            } else {
+                println(error)
+            }
+        })
+        
+        task2.resume()
+        
     }
+    
+
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user

@@ -11,8 +11,10 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Downloading_Web_Content_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Label" id="ORY-tX-JZQ"/>
+                        <imageView width="129" height="95" alignment="left" id="MZW-Cy-V0O"/>
                     </items>
                     <connections>
+                        <outlet property="theImage" destination="MZW-Cy-V0O" id="Z0R-d8-C5k"/>
                         <outlet property="theLabel" destination="ORY-tX-JZQ" id="g2o-1Q-Dc1"/>
                     </connections>
                 </controller>
