@@ -18,7 +18,8 @@ class InterfaceController: WKInterfaceController {
         let url = NSURL(string: "http://www.stackoverflow.com")
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
             if error == nil {
-                println(data)
+                var urlContent = NSString(data: data, encoding: NSUTF8StringEncoding)
+                println(urlContent)
             } else {
                 println(error)
             }
