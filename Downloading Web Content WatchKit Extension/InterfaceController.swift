@@ -32,18 +32,34 @@ class InterfaceController: WKInterfaceController {
         
         task.resume()
         
-        let url2 = NSURL(string: "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Homer_Simpson_2006.png/212px-Homer_Simpson_2006.png")
         
-        let task2 = NSURLSession.sharedSession().dataTaskWithURL(url2!, completionHandler: { (data, response, error) -> Void in
-            if error == nil {
-                var homerImage = UIImage(data: data)
-                self.theImage.setImage(homerImage!)
-            } else {
-                println(error)
-            }
-        })
+        let documentsPath: AnyObject = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+        let destinationPath = documentsPath.stringByAppendingPathComponent("homer.png")
+        let homer = UIImage(contentsOfFile: destinationPath)
         
-        task2.resume()
+        if homer != nil {
+            theImage.setImage(homer)
+            
+        } else {
+        
+            let url2 = NSURL(string: "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Homer_Simpson_2006.png/212px-Homer_Simpson_2006.png")
+        
+            let task2 = NSURLSession.sharedSession().dataTaskWithURL(url2!, completionHandler: { (data, response, error) -> Void in
+                if error == nil {
+                    var homerImage = UIImage(data: data)
+                    self.theImage.setImage(homerImage!)
+                
+                    let imageData: NSData? = UIImagePNGRepresentation(homerImage)
+                    if imageData != nil {
+                        imageData?.writeToFile(destinationPath, atomically: true)
+                    }
+                } else {
+                    println(error)
+                }
+            })
+        
+            task2.resume()
+        }
         
     }
     
